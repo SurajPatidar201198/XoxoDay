@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round"/>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .intro h2 {
+            font-weight: bold;
+            margin-bottom: 80px;
+            padding-top: 60px;
+            color: white;
+        }
+        
+        #copyright{text-align: center;}
+        @media(max-width:762px){
+            #padd{padding:5px 18px 5px 18px;}
+            .intro h2{
+                font-size:24px;
+                padding-top: 25px;
+                margin-bottom: 40px;
+            }
+            #intro{font-size: 20px;}
+        }
+    </style>
+    <script>
+            var i=0;
+            
+            function func(){
+               if($(window).width()<=762){
+                if(i%2==0){
+                document.getElementById('click').style.top="330px";
+                }
+                else{
+                    document.getElementById('click').style.top="130px";
+                    }
+                
+                i=i+1;
+               }
+            }
+            
+            
+       </script>
+</head>
+
+<body>
+        <div>
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
+                            <!-- Brand -->
+                    <div class="container">
+                            <a class="navbar-brand" href="#"><img src="assets/img/linkedinlogo.png" class="rounded" alt="Logo" style="width:40px;"> WeDev</a>
+                          
+                            <!-- Toggler/collapsibe Button -->
+                            <button class="navbar-toggler" onclick="func()" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <!-- Navbar links -->
+                        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                          <ul class="navbar-nav">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="events.html">Events</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="team.html">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                 <a class="nav-link" href="index.html#contact">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav> 
+            </div>
+    <main>
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">About</h2>
+                <div  id="click" ></div>
+                <div  id="bigteam" ></div>
+            </div>
+            <div id="padd">
+                <div class="row">
+                    <div class="d-flex flex-column">
+                        <div class="p-2 text-center"><h3 id="intro">Introduction</h3></div>
+                        <div class="p-2 text-center">WeDev is a community for technophiles
+                             who like technology and for anyone who wants to support Open source.
+                              We aim to promote Collective intelligence and Open Source projects
+                               among students and other contributors in tech.
+                             We are a group of enthusiastic people ranging from students
+                              to professional experts willing to teach and make people thrive
+                               in Open source.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section style="padding-bottom:30px;">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">FAQs</h2>
+            </div>
+            <div id="padd">
+                <div class="row">
+                        <div class="d-flex flex-column">
+                            <div class="p-2 text-center"><h3 id="intro">Q. How WeDev started?</h3></div>
+                            <div class="p-2 text-center">So we weren’t WeDev from the beginning, 
+                                when we were null, we called ourselves Open Source Developers. 
+                                Eventually we started exploring the world of Open Source and WeDev, 
+                                and that’s how we came around WeDev Communities. We reached out to 
+                                WeDev India and talked to them about starting a Campus Club since 
+                                we were just students learning about Open Source but, they offered us 
+                                to start a regional chapter as WeDev, so we could bring all 
+                                the Universities under one umbrella, and make a bigger community! 
+                                So hey if you made this far, 
+                                come in and join us and be a part of this amazing Open Community of Punjab!
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="d-flex flex-column">
+                            <div class="p-2 text-center"><h3 id="intro">Q. What is the aim of WeDev?</h3></div>
+                            <div class="p-2 text-center">Our mission is to ensure the Internet is a 
+                                global public resource, open and accessible to all. An Internet that
+                                 truly puts people first, where individuals can shape their own 
+                                 experience and are empowered, safe and independent. At WeDev, we’re 
+                                 a global community of technologists, thinkers and builders working 
+                                 together to keep the Internet alive and accessible, so people worldwide 
+                                 can be informed contributors and creators of the Web. We believe this act 
+                                 of human collaboration across an open platform is essential to individual 
+                                 growth and our collective future.
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex flex-column">
+                        <div class="p-2 text-center"><h3 id="intro">Q. Who should I contact to be a part of WeDev?</h3></div>
+                        <div class="p-2 text-center">No one. If you're polite and helpful or you want to be helped, you're 
+                            free to ask any questions in the mailing list, google group, telegram group or 
+                            social accounts.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex flex-column">
+                        <div class="p-2 text-center"><h3 id="intro">Q. Who all can contribute to WeDev Pujab?</h3></div>
+                        <div class="p-2 text-center">In this era of competition everyone is busy in getting the first place, 
+                            competition with others and letting them down for putting yourself at first place.
+                            This community is for everyone except those.
+                            Everyone can contribute to WeDev. We cordially invite contributions 
+                            and participants from every community and sect regardless of gender, 
+                            color or any other factor. Coming together is a beginning. 
+                            Keeping together is progress. Working together is success. </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex flex-column">
+                        <div class="p-2 text-center"><h3 id="intro">Q. What I will get by joining any community?</h3></div>
+                        <div class="p-2 text-center">Community gives you Exposure, Expert Teachings, 
+                            Hackathons, Week of Coding, Conferences, Talks, Hands-on, Projects to 
+                            contribute and everything that you need to thrive in the era of technology.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex flex-column">
+                        <div class="p-2 text-center"><h3 id="intro">Q. What are the domains in focus of the community?</h3></div>
+                        <div class="p-2 text-center">Community gives you a fantastic opportunity 
+                            to explore and grow in the domain of Open Source Technologies, 
+                            Data Science, ML, Competitive Programming, Web Development, 
+                            Security, other domains that Computer Science offers and the 
+                            list will keep on increasing with time. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="footer">
+            <div class="container">
+              <div id="padd" style="padding-bottom: 60px;">
+                <div class="row" style="padding-top:40px;">
+                  <div class="col-md-4">
+                      <div class="d-flex flex-column">
+                          <div class="p-2" id="footertext"><h2>Follow Us</h2></div>
+                          <ul>
+                            <li><a href=""><i class="fab fa-facebook-f"></i>&nbsp;&nbsp;&nbsp; Facebook</a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i>&nbsp;&nbsp; Twitter</a></li>
+                            <li><a href=""><i class="fab fa-linkedin-in"></i>&nbsp;&nbsp; Linkedin</a></li>
+                            <li><a href=""><i class="fab fa-mastodon"></i>&nbsp;&nbsp; Mastodon</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="d-flex flex-column">
+                          <div class="p-2" id="footertext"><h2>Important Links</h2></div>
+                          <ul>
+                            <li><a href="">Join Telegram Group</a></li>
+                            <li><a href="">Meet Our Team</a></li>
+                            <li><a href="">Code of Conduct</a></li>
+                            <li><a href="">About</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="d-flex flex-column">
+                          <div class="p-2" id="footertext"><h2></h2></div>
+                          <div class="p-2"><b>WeDev<br>Open Source Developers Community</b></div>
+                          <div class="p-2">Lovely Professional University, Jalandhar - Delhi G.T. Road, Phagwara, Punjab (India) - 144411</div>
+                      </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="d-flex flex-column">
+                    <div class="col" id="copyright">WeDev Open Source Developers Community 2019</div>
+                </div>    
+              </div>
+            </div>
+          </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+</body>
+
+</html>

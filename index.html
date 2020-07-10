@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round"/>
+    <style>
+         
+         
+        /*.row{padding-left:40px;padding-right:40px;}*/
+        
+        .col-md-5,.col{
+          position:relative;
+          width:100%;
+          min-height:1px;
+          padding-right:0px;
+          padding-left:0px;
+        }
+        .col-md-5{
+          -webkit-box-flex:0;
+          -ms-flex:0 0 48.666667%;
+          flex:0 0 48.666667%;
+          max-width:48.666667%
+        }
+        #events{
+          border-left: 4px solid #fff;
+          border-radius: 30px;
+          overflow: hidden;
+        }
+        #viewall,#reg{
+          line-height:40px;
+          float:right;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 11px;
+          border: 3px solid #666;
+          padding: 0px 20px 0px;
+          color: #fff !important;
+        }
+        #reg{float: left;}
+        #viewall:hover,#reg:hover{
+          padding: 0px 20px 0px;
+          border: 3px solid #fff;
+          text-transform: uppercase;
+          background: linear-gradient(90deg,#ff8a00,#e52e71);
+          background-clip: border-box;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+        }
+        #know:hover{
+          background: linear-gradient(90deg,#ff8a00,#e52e71);
+          background-clip: border-box;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .btn{margin-top: 20px;border: 3px solid #666;
+border-radius: 40px;
+padding-left: 25px;
+padding-right: 25px;
+font-weight: bold;
+font-size: 12px;
+text-transform: uppercase;}
+        #eventext a,#evenlink a{color:#039be5;}
+        #padd{padding-bottom:60px;}
+        .contact{background:rgb(61, 61, 61);}
+        #evenlink{
+          margin: 10px 0 10px 0; 
+        }
+        .col{display: block;}
+        .social a i{font-size: 35px;padding:0 5px 0 8px;}
+        .contact .fa-telegram-plane,.contact .fa-twitter{color:#00e5ff;}
+        .contact .fa-facebook-f{color: royalblue;}
+        .contact .fa-mastodon{color: #3088d4;}
+        .contact .fa-linkedin{color:#007bb5;}
+        .contact .fa-github{color:white;}
+        @media(min-width:763px){
+          #eventimg{padding: 45px;}
+          #eventdes{padding: 55px;}
+            } 
+        @media(max-width:762px){
+        .col-md-5,.col{min-width:100%;}
+        #eventext{min-width:50%;}
+        .carousel-item .img-responsive{height:372px;}
+        .carousel{}
+        .carousel-caption{
+          bottom: 0;
+          min-width:90%;margin-left:-30px;
+        }
+        .carousel-caption h1{font-size:20px;margin-bottom: 10px;}
+        .carousel-caption p{font-size:13px;margin-bottom: -10px;}
+        .btn{font-size:12px;}
+        #padd{padding:5px 18px 50px 18px;}
+        #eventext h2,#evenlink h2{font-size: 25px;}
+        #eventext h3{font-size: 20px;}
+        #eventdes{padding:10px;}
+        #eventext a,#evenlink a{
+          font-size: 15px;line-height: 30px;
+          border-radius: 5px;
+        }
+            
+        }
+        
+    </style>
+</head>
+<body style="color:white;">
+    <div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark justify-content-center">
+                <!-- Brand -->
+                <div class="container">
+                <a class="navbar-brand" href="#"><img src="assets/img/linkedinlogo.png" class="rounded" alt="Logo" style="width:40px;"> WeDev</a>
+              
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#contact">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav> 
+        </div>
+        <div id="demo" class="carousel">
+
+                <div class="carousel-inner">
+                  <div class="carousel-item  justify-content-center active">
+                    <img src="assets/img/o2.jpg" class="img-responsive" alt="Los Angeles">
+                    
+                         <div class="carousel-caption">
+                         <h1>Open Source Developers Community</h1>
+                         <p>WeDev is a community for technophiles who like technology
+                            and for anyone who wants to support Open Source. We aim to promote collective
+                             intelligence and Open Source projects among students and other contributors in
+                            tech. We are a group of enthusiastic people ranging from students to professional 
+                          experts willing to teach and make people thrive in Open Source.</p>
+                         <a href="about.html"><button type="button" class="btn btn-outline-light" id="know">Know more</button></a>
+                    </div>
+                    
+                  </div>
+                </div>
+              
+              </div>
+            
+    <div class="container"> 
+       <div id="padd">
+        <div class="row" style="padding-top:40px;padding-bottom: 40px;">
+            <div class="col-md-5" id="eventext"><h2>Events</h2></div>
+            <div class="col-md-5" id="eventext"><a href="events.html" id="viewall">View All</a></div>
+        </div>
+        <div class="row" id="events">
+                <div class="col-md-5" id="eventimg">
+                    <img src="assets/img/event.jpg" class="img-responsive" alt="Google Summer Of Code">
+                </div>
+                <div class="col-md-5" id="eventdes">
+                    <div id="evenlink"><a href=""><h2>Diving Into Open Source</h2></a></div> 
+                    TensorFlow Dev Summit brings together a diverse mix of machine 
+                    learning users from around the world for two days of highly technical talks,
+                     demos, and conversation with the TensorFlow team and community.
+                     <div class="align-bottom" style="margin-top: 40px;">
+                     <div id="evenlink"><a href="" id="reg">Register</a></div>
+                     <div id="evenlink"><a href="event.html" id="viewall">Know more</a></div>
+                     </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="container">
+        <div id="padd">
+          <div class="row justify-content-center" style="padding-top:40px;">
+                  <div class="d-flex flex-column text-center">
+                      <div class="p-2" id="eventext"><h2>Contact Us</h2></div>
+                      <div class="p-2">Write here about contact us.</div>
+                      <div class="p-2"><i class="fa fa-globe"></i><a href="">&nbsp;&nbsp;&nbsp; WeDev</a></div>
+                      <div class="p-2"><i class="fab fa-telegram-plane"></i><a href="">&nbsp;&nbsp;&nbsp; Join Telegram Group</a></div>
+                      <div class="p-2" id="eventext"><h5>Keep in touch with WeDev for the latest announcements</h5></div>
+                      <div class="p-2">
+                        <div class="social">
+                          <a href=""><i class="fab fa-github"></i></a>
+                          <a href=""><i class="fab fa-mastodon"></i></a>
+                          <a href="https://www.linkedin.com/in/"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                      </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div id="padd">
+          <div class="row" style="padding-top:40px;">
+            <div class="col-md-4">
+                <div class="d-flex flex-column">
+                    <div class="p-2" id="footertext"><h2>Follow Us</h2></div>
+                    <ul>
+                      <li><a href=""><i class="fab fa-facebook-f"></i>&nbsp;&nbsp;&nbsp; Facebook</a></li>
+                      <li><a href=""><i class="fab fa-twitter"></i>&nbsp;&nbsp; Twitter</a></li>
+                      <li><a href=""><i class="fab fa-linkedin-in"></i>&nbsp;&nbsp; Linkedin</a></li>
+                      <li><a href=""><i class="fab fa-mastodon"></i>&nbsp;&nbsp; Mastodon</a></li>
+                      <li><a href=""><i class="fab fa-github"></i>&nbsp;&nbsp; GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex flex-column">
+                    <div class="p-2" id="footertext"><h2>Important Links</h2></div>
+                    <ul>
+                      <li><a href="">WeDev</a></li>
+                      <li><a href="">Source Code</a></li>
+                      <li><a href="">Code of Conduct</a></li>
+                      <li><a href="">Participation Guidelines</a></li>
+                      <li><a href="">Proposal Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex flex-column">
+                    <div class="p-2" id="footertext"><h2></h2></div>
+                    <div class="p-2"><b>WeDev<br>Open Source Developers Community</b></div>
+                    <div class="p-2">Jalandhar - Delhi G.T. Road, Phagwara, Punjab (India) - 144411</div>
+                </div>
+            </div>
+          </div>
+          <hr>
+          <div class="d-flex flex-column">
+              <div class="col" id="copyright">WeDev Open Source Developers Community 2019</div>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
